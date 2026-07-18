@@ -76,9 +76,9 @@ html, body {
 }
 
 .cover__emblem {
-  width: min(220px, 55%);
+  width: min(280px, 70%);
   margin: var(--space-lg) auto;
-  border-radius: 50%;
+  border-radius: var(--page-radius);
   box-shadow: 0 0 0 2px var(--aegean-deep), 0 0 0 5px var(--gold), 0 10px 40px rgba(0,0,0,0.55);
 }
 
