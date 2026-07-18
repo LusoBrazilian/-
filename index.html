@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ζάζης ἢ Περὶ Μεγέθους — Zaze, or On Greatness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+SC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ornaments.css">
+  <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+  <main class="stage">
+
+    <!-- Closed book / title page -->
+    <div class="cover-wrap" id="coverWrap">
+      <div class="cover__frame">
+        <p class="cover__eyebrow">A Platonic Dialogue</p>
+        <h1 class="cover__title-gr">ΖΑΖΗΣ</h1>
+        <p class="cover__title-sub-gr">ἢ Περὶ Μεγέθους</p>
+        <p class="cover__title-en">Zaze, or On&nbsp;Greatness</p>
+        <img
+          class="cover__emblem"
+          src="assets/epirus-emblem.png"
+          alt="Emblem of Epirus: a running hound encircled by a Greek meander border">
+        <p class="cover__meta">Σωκράτης &middot; Γλαύκων &middot; Ζάζης ὁ Ἠπειρώτης</p>
+        <button type="button" class="cover__enter" id="btnBegin">Begin Reading</button>
+      </div>
+    </div>
+
+    <!-- Open book: two-page spread -->
+    <div class="book-wrap is-hidden" id="bookWrap">
+      <div class="spread" id="spread">
+        <div class="page-slot page-slot--left" id="slotLeft"></div>
+        <div class="page-slot page-slot--right" id="slotRight"></div>
+
+        <div class="flip-leaf flip-leaf--right" id="flipRight">
+          <div class="flip-leaf__front" id="flipRightFront"></div>
+          <div class="flip-leaf__back" id="flipRightBack"></div>
+        </div>
+        <div class="flip-leaf flip-leaf--left" id="flipLeft">
+          <div class="flip-leaf__front" id="flipLeftFront"></div>
+          <div class="flip-leaf__back" id="flipLeftBack"></div>
+        </div>
+
+        <button type="button" class="nav-zone nav-zone--prev" id="zonePrev" aria-label="Previous page">
+          <span class="nav-zone__arrow" aria-hidden="true">&larr;</span>
+        </button>
+        <button type="button" class="nav-zone nav-zone--next" id="zoneNext" aria-label="Next page">
+          <span class="nav-zone__arrow" aria-hidden="true">&rarr;</span>
+        </button>
+      </div>
+
+      <div class="controls">
+        <button type="button" class="controls__btn" id="btnCover">&#8618; Cover</button>
+        <button type="button" class="controls__btn" id="btnPrev">&larr; Prev</button>
+        <span class="controls__count" id="pageCount"></span>
+        <button type="button" class="controls__btn" id="btnNext">Next &rarr;</button>
+      </div>
+
+      <p class="hint">Click the page edges or the controls below</p>
+    </div>
+
+  </main>
+
+  <script src="js/content.js"></script>
+  <script src="js/book.js"></script>
+</body>
+</html>

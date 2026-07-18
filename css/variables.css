@@ -1,0 +1,57 @@
+/* ============================================================
+   ΖΑΖΗΣ ἢ Περὶ Μεγέθους — Design Tokens
+   A book skinned like a fired Attic vase: deep Aegean night,
+   parchment page, terracotta clay, and worn gold leaf.
+   ============================================================ */
+
+:root {
+  /* ---- Palette -------------------------------------------- */
+  --aegean-deep:     #0c2233;  /* cover background, night sea   */
+  --aegean:          #1d4e73;  /* primary blue, headers/links    */
+  --aegean-light:    #3d7ca3;  /* hover / secondary accents      */
+  --parchment:       #f3ead2;  /* page background                */
+  --parchment-dim:   #e7d9b8;  /* page shadow / recessed areas   */
+  --clay:            #a8542f;  /* terracotta — figures, rules    */
+  --clay-dark:       #7c3b20;  /* deeper terracotta for text     */
+  --gold:            #bd9a3f;  /* gold leaf — titles, ornament   */
+  --gold-bright:     #d8b968;  /* hover state on gold elements   */
+  --ink:             #1b1a17;  /* body text, near-black          */
+  --ink-soft:        #4a453c;  /* secondary text                 */
+
+  /* ---- Typography ------------------------------------------ */
+  --font-display: "Cinzel", "Times New Roman", serif;           /* titles, monumental */
+  --font-body:    "EB Garamond", "Georgia", serif;               /* dialogue text      */
+  --font-marginalia: "Cormorant SC", "Cinzel", serif;            /* speaker names, refs */
+
+  --step-cover-title:  clamp(2.4rem, 6vw, 4.2rem);
+  --step-cover-sub:    clamp(1rem, 2vw, 1.35rem);
+  --step-h1:           clamp(1.6rem, 3vw, 2.2rem);
+  --step-speaker:      1rem;
+  --step-body:         1.28rem;
+  --step-marginal:     0.85rem;
+
+  /* ---- Spacing ---------------------------------------------- */
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.6rem;
+  --space-lg: 2.8rem;
+  --space-xl: 4.5rem;
+
+  /* ---- Page geometry ------------------------------------------ */
+  --page-width: 720px;
+  --page-radius: 2px;
+  --border-width: 3px;
+  --spread-width: 1080px;
+  --spread-height: 760px;
+
+  /* ---- Motion ------------------------------------------------- */
+  --ease-page: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-page: 320ms;
+  --dur-flip: 380ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-page: 0ms;
+  }
+}

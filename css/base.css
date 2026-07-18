@@ -1,0 +1,70 @@
+/* ============================================================
+   Base reset & shared typography
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--aegean-deep);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  color: var(--aegean);
+  text-decoration: none;
+}
+
+a:hover, a:focus-visible {
+  color: var(--clay-dark);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* small-caps utility for speaker names / Greek headers */
+.smallcaps {
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+}
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
